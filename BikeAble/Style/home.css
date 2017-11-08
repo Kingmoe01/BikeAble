@@ -1,0 +1,152 @@
+﻿@font-face {
+    font-family: Brush;
+    src: url(../Fonts/Brush.ttf);
+}
+
+body {
+    padding-top: 50px;
+    margin:auto;
+    background: url(../img/Homebck.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    color:white;
+    min-width:300px;
+}
+
+h1{
+    font-family:Brush;
+    font-size:60px;
+}
+
+.BlueBox{
+    background-color:#2B616D;
+    opacity:0.88;
+}
+
+#OngletCoursier{
+    width:200px;
+    background-color:#3A8292;
+}
+
+#exTab1 .tab-content {
+  color : white;
+  max-width: 700px;
+  width:inherit;
+  min-width: 304px;
+  background-color: #2B616D;
+  padding : 5px 15px;
+  margin:auto;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+  border-top-right-radius:10px;
+  opacity:0.88;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size:20px;
+  margin-bottom:20px;
+}
+
+.Titre{
+    max-width:700px;
+    margin: auto;
+    padding-bottom:150px;
+}
+
+/*Padding 5px*/
+.Padding5{
+    padding:5px;
+}
+
+.nav-pills{
+    max-width:700px;
+    margin:auto;
+    opacity:0.88;
+}
+
+/*Align Right*/
+.AR{
+    text-align:right;
+}
+
+/*Align Left*/
+.AL{
+    text-align:left;
+}
+
+.InputW{
+    width:250px;
+}
+
+.nav-link{
+    color:white;
+    background-color:#3A8292;
+}
+
+.nav-link:hover{
+    color:#F4F4F4;
+}
+
+.HomeBtn{
+    background-color:#FA8D62;
+    border:none;
+}
+
+.HomeBtn:hover{
+    background-color:#F96F39;
+}
+
+.red{
+    color:white;
+}
+
+#LeftPill{
+    border-top-left-radius:15px;
+    border-top-right-radius:0px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+}
+
+#RightPill{
+    border-top-left-radius:0px;
+    border-top-right-radius:15px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+}
+
+#Alert{
+    margin:auto;
+    margin-top:10px;
+    max-width:700px;
+    min-width: 304px;
+    width:inherit;
+}
+
+
+/*Overwrite Bootstrap*/
+.nav-pills .nav-link.active, .show>.nav-pills .nav-link {
+  background-color: #2B616D;
+}
+
+@media(min-width: 400px) and (max-width: 768px) {
+    .AR{
+        text-align:center;
+    }
+    .AL{
+        text-align:center;
+    }
+    #ALBtn{
+        text-align:center;
+    }
+}
+@media (max-width: 400px) {
+    .AR{
+        text-align:Left;
+    }
+    .AL{
+        text-align:Left;
+    }
+    #ALBtn{
+        text-align:Left;
+    }
+}
+
+

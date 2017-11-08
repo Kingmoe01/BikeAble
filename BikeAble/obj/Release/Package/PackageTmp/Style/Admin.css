@@ -1,0 +1,192 @@
+﻿@font-face {
+    font-family: Brush;
+    src: url(../Fonts/Brush.ttf);
+}
+
+body {
+    background-color:#484848;
+    color:white;
+}
+
+#Brand{
+    color:white;
+    font-family:Brush;
+    text-align:center;
+    font-size:50px;
+    margin:auto;
+    z-index:5;
+    text-indent:0px;
+}
+
+#MenuToggle{
+    font-size:30px;
+    margin-left:20px;
+    line-height:60px;
+    vertical-align:middle;
+    color:white;
+}
+
+.OrangeBand{
+    width:100%;
+    height:60px;
+    background-color:#FA8D62;
+    position:relative;
+    z-index:0;
+}
+
+.fa-user-circle{
+    font-size:60px;
+    margin-top:5px;
+}
+
+#InfoUser{
+    margin-left:15px;
+    line-height:20px;
+    margin-bottom:15px;
+}
+
+li .OrangeBand{
+    z-index:-1;
+    position:absolute;    
+}
+
+span i{
+    margin-left:10px;
+}
+
+h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid #303030;
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color:#303030;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px #303030;
+}
+
+.deconnexionAdmin{
+    width:1px;
+    display:inline-block;
+}
+
+.nibba{
+    width:10px;
+}
+
+#tblClient{
+    min-width:700px;
+}
+
+#deconnexion{
+    text-align:center;
+    float:right;
+}
+
+#deconnexion:hover{
+    background-color:#303030;
+}
+
+#align{
+    text-align:left;
+}
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  margin: 50px;
+}
+
+.delButton{
+    color:white;
+    background-color:#FA8D62;
+    border:none;
+}
+
+.delButton:hover{
+    color:white;
+    background-color:#F96F39;
+}
+/* follow me template */
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+.made-with-love i {
+  font-style: normal;
+  color: #F50057;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.made-with-love a:hover {
+  text-decoration: underline;
+}
+
+#BlackBox{
+    background: #303030;
+    color: white;
+    border-radius: 10px;
+    font-size:24px;
+    font-family:David;
+    padding-right:10px;
+    padding-top:5px;
+}
+
+.AL{
+    text-align:left;
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}

@@ -1,0 +1,142 @@
+﻿using MySql.Data.MySqlClient;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BusinessLogic
+{
+    public class LivraisonFactory
+    {
+        string cnnStr;
+
+        public LivraisonFactory(string _cnnStr)
+        {
+            cnnStr = _cnnStr;
+        }
+
+        public Livraison GetbyId(int _id)
+        {
+            using (MySqlConnection mySqlCo = new MySqlConnection(cnnStr))
+            {
+                mySqlCo.Open();
+
+                MySqlCommand cmd = mySqlCo.CreateCommand();
+                cmd.CommandText = "SELECT * FROM livraison l WHERE l.ID_Livraison = @id;";
+                cmd.Parameters.AddWithValue("@id", _id);
+
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        
+                        DateTime elapsedTime;
+                        int id = int.Parse(reader["ID_livraison"].ToString());
+                        float distance = float.Parse(reader["distance_livraison"].ToString());
+
+                        if (reader["elapsedTime_livraison"] == DBNull.Value)
+                            elapsedTime = DateTime.MinValue;
+                        else
+                            elapsedTime = DateTime.Parse(reader["elapsedTime_livraison"].ToString());
+
+                        string status = reader["status"].ToString();
+
+                        return new Livraison(id, distance, elapsedTime,status);
+                    }
+                    else
+                        return null;
+                }
+            }
+        }
+
+
+
+        public Livraison[] GetAll()
+        {
+
+            List<Livraison> livraisons = new List<Livraison>();
+            using (MySqlConnection mySqlCo = new MySqlConnection(cnnStr))
+            {
+                mySqlCo.Open();
+
+                MySqlCommand cmd = mySqlCo.CreateCommand();
+                cmd.CommandText = "SELECT * FROM livraison;";
+
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        DateTime elapsedTime;
+
+                        int id = int.Parse(reader["ID_livraison"].ToString());
+                        float distance = float.Parse(reader["distance_livraison"].ToString());
+                        if (reader["elapsedTime_livraison"] == DBNull.Value)
+                            elapsedTime = DateTime.MinValue;
+                        else
+                            elapsedTime = DateTime.Parse(reader["elapsedTime_livraison"].ToString());
+                        string status = reader["status"].ToString();
+
+                        livraisons.Add(new Livraison(id, distance, elapsedTime, status));
+                    }
+                }
+            }
+
+            return livraisons.ToArray();
+        }
+
+
+
+        public Livraison[] GetAll(int _idClient)
+        {
+
+            List<Livraison> livraisons = new List<Livraison>();
+            using (MySqlConnection mySqlCo = new MySqlConnection(cnnStr))
+            {
+                mySqlCo.Open();
+
+                MySqlCommand cmd = mySqlCo.CreateCommand();
+                cmd.CommandText = "SELECT l.ID_livraison, l.distance_livraison, l.elapsedTime_livraison,c.deletedDate_commande, c.nom_commande, l.status, c.createdDate_commande FROM livraison l " +
+                                    "join commande c on l.ID_livraison = c.idLivraison_commande " +
+                                    "join usager u on u.ID_usager = c.idClient_commande " +
+                                    "where u.ID_usager = @id;";
+
+                cmd.Parameters.AddWithValue("@id", _idClient);
+
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        int id = int.Parse(reader["ID_livraison"].ToString());
+                        float distance = float.Parse(reader["distance_livraison"].ToString());
+                        DateTime elapsedTime;
+
+
+                        if (reader["elapsedTime_livraison"] == DBNull.Value)
+                            elapsedTime = DateTime.MinValue;
+                        else
+                            elapsedTime = DateTime.Parse(reader["elapsedTime_livraison"].ToString());
+
+                        string status = reader["status"].ToString(),
+                            nom = reader["nom_commande"].ToString();
+                        DateTime createdDate = DateTime.Parse(reader["createdDate_commande"].ToString());
+
+<<<<<<< HEAD
+                        DateTime deleted;
+                        DateTime.TryParse(reader["deletedDate_commande"].ToString(), out deleted);
+
+                        if (deleted.ToString() == "0001-01-01 00:00:00")
+                            livraisons.Add(new Livraison(id, distance, elapsedTime, status,nom,createdDate));
+=======
+                        livraisons.Add(new Livraison(id, distance, elapsedTime, status,createdDate,nom));
+>>>>>>> 5b04c2d63a3b4033d2d1de93d4b15e4c7288b47a
+                    }
+                }
+
+                
+            }
+
+            return livraisons.ToArray();
+        }
+    }
+}

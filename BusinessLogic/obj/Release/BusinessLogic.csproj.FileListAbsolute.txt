@@ -1,0 +1,6 @@
+C:\Users\Utilisateur\Desktop\BikeAble\Projet_developpement\BikeAble\BusinessLogic\bin\Release\BusinessLogic.dll
+C:\Users\Utilisateur\Desktop\BikeAble\Projet_developpement\BikeAble\BusinessLogic\bin\Release\BusinessLogic.pdb
+C:\Users\Utilisateur\Desktop\BikeAble\Projet_developpement\BikeAble\BusinessLogic\bin\Release\MySql.Data.dll
+C:\Users\Utilisateur\Desktop\BikeAble\Projet_developpement\BikeAble\BusinessLogic\obj\Release\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\Utilisateur\Desktop\BikeAble\Projet_developpement\BikeAble\BusinessLogic\obj\Release\BusinessLogic.dll
+C:\Users\Utilisateur\Desktop\BikeAble\Projet_developpement\BikeAble\BusinessLogic\obj\Release\BusinessLogic.pdb

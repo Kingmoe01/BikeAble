@@ -1,0 +1,197 @@
+﻿@font-face {
+    font-family: Brush;
+    src: url(../Fonts/Brush.ttf);
+}
+
+html{
+    height:100%;
+}
+
+body {
+    background-color:#B2DBD5;
+    min-height:100%;
+}
+
+.container-fluid{
+    min-height:100vh;
+}
+
+.col-3,col-9{
+    min-height:100vh;
+}
+
+h1{
+    font-family:Brush;
+    font-size:30px;
+    vertical-align:middle;
+    line-height:30px;
+       
+}
+
+.btn{
+    background-color:#FA8D62;
+    border:none;
+    border-radius:15px;
+    text-align:center;
+    margin-top:10px;
+    width:137px;
+    font-size:20px;
+}
+
+.btn:hover{
+    background-color:#F96F39;
+}
+
+#InfoBox{
+    background-color:#2B616D;
+    width:137px;
+    height:auto;
+    border-radius:15px;
+    margin-top:10px;
+    margin-left:5px;
+    text-align:center;
+    color:white;
+}
+
+#TitleDiv{
+    width:137px;
+    height:40px;
+    border-radius:15px;
+    background-color:#2B616D;
+    color:white;
+    text-align:center;
+    margin-top:10px;
+    padding:5px;
+    margin-left:5px;
+}
+
+.WrapWarning{
+    position:absolute;
+    z-index:2;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    background-color:red;
+    padding:5px;
+    border-radius:15px;
+    border: 2px solid black;
+    width:50%;
+    height:50%;
+    vertical-align:middle;
+    font-size:20px;
+    display:table;
+}
+
+#Background{
+    background-color:#B2DBD5;
+    width:100%;
+    height:100vh;
+    position:absolute;
+    z-index:1;
+    left:0px;
+}
+
+.Warning{
+    display:table-cell;
+    vertical-align:middle;
+}
+
+#GoogleMap{
+    margin-top:10px;
+    background-color:gray;
+    border:2px solid #2B616D;
+    height:100%;
+    width:100%;
+}
+
+#ColMap{
+    padding-right:5px;
+    padding-left:5px;
+}
+
+#InfoBoxTitle{
+    background-color:#FA8D62;
+    margin-top:10px;
+    border-radius:10px;
+}
+
+.MarginLeft{
+    margin-left:5px;
+}
+
+#Warning2{display:none;}
+
+@media only screen and (orientation:landscape){
+    #Warning{display:none;}
+    #Background{display:none;}
+}
+
+@media (min-width: 568px) and (max-width: 667px) {
+    #GoogleMap {
+        height: 300px;
+    }
+    #InfoBox{
+        height: 200px;
+    }
+}
+
+/*IPHONE 5 PLUS*/
+@media (min-width: 667px) {
+    #GoogleMap {
+        height: 355px;
+
+    }
+    #InfoBox{
+        height: 255px;
+        margin:auto;
+        margin-top:10px;
+        width:100%;
+        margin-left:5px;
+    }
+    .btn{
+        margin:auto;
+        margin-top:10px;
+        width:100%;
+        margin-left:5px;
+    }
+    #TitleDiv{
+        margin:auto;
+        margin-top:10px;
+        width:100%;
+        margin-left:5px;
+    }
+}
+
+/*IPHONE 6 PLUS*/
+@media (min-width: 732px) {
+    #GoogleMap {
+        height: 395px;
+
+    }
+    #InfoBox{
+        height: 295px;
+        margin:auto;
+        margin-top:10px;
+        width:100%;
+        margin-left:5px;
+    }
+    .btn{
+        margin:auto;
+        margin-top:10px;
+        width:100%;
+        margin-left:5px;
+    }
+    #TitleDiv{
+        margin:auto;
+        margin-top:10px;
+        width:100%;
+        margin-left:5px;
+    }
+}
+
+@media (min-width: 737px) {
+    #Warning2{display:table;}
+    #Background{display:inline;}
+}

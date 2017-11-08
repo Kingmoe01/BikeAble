@@ -1,0 +1,252 @@
+﻿@font-face {
+    font-family: Brush;
+    src: url(../Fonts/Brush.ttf);
+}
+
+body {
+    margin:auto;
+    background-color:#B2DBD5;
+}
+
+h1{
+    font-family:Brush;
+    font-size:60px;
+    display:table-cell; 
+    vertical-align:middle
+}
+
+#TitleDiv{
+    width:300px;
+    border-radius:15px;
+    background-color:#2B616D;
+    color:white;
+    text-align:center;
+    margin:auto;
+    margin-top:30px;
+    display:table;
+    margin-bottom:30px;
+}
+
+#Footer {
+    background-color:#FA8D62;
+    text-align:center;
+    color:White;  
+    margin:auto;
+    width:100%;
+}
+
+#BlueBox{
+    background-color:#2B616D;
+    color:white;
+    margin-bottom:30px;
+    padding:5px;
+    border-radius:10px;
+    min-width:300px;
+}
+
+#Footer{
+    min-width:300px;
+}
+
+#error{
+    text-align:center;
+    padding-top:10px;
+}
+
+.adresseBox{
+    margin-top: 20px;
+}
+
+.padding5{
+    padding:2px;
+}
+
+.AR{
+    text-align:right;
+    font-size:30px;
+    font-family:David;
+}
+
+.AL{
+    text-align:left;
+}
+
+.InputW{
+    min-width:290px;
+}
+
+.BarBtnLeft {
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+    border:none;
+    background-color: #FA8D62;
+}
+
+.BarBtnLeft:hover{
+    background-color:#F96F39;
+}
+
+#ContentPlaceHolder1_Retour,#ContentPlaceHolder1_decode{
+    margin:auto;
+    background-color: #FA8D62;
+    border-radius:10px;
+    border:none;
+}
+
+#ContentPlaceHolder1_decode{
+    margin-top:10px;
+}
+
+#input{
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+#Filelabel{
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color:#FA8D62;
+    display: inline-block;
+    margin:auto;
+    border-radius:10px;
+    padding:8px;
+    padding-top:2px;
+    padding-bottom:2px;
+    margin-bottom:10px;
+}
+
+#Filelabel:hover, #ContentPlaceHolder1_Retour:hover,#ContentPlaceHolder1_decode:hover {
+    background-color:#F96F39;
+}
+
+.aspNetDisabled{
+    cursor:not-allowed;
+}
+
+p{
+    margin:auto;
+}
+#ContentPlaceHolder1_swap{
+    background-color:#FA8D62;
+    font-size:15px;
+    padding:0px;
+    color:white;
+}
+#ContentPlaceHolder1_swap span{
+    background-color:#FA8D62;
+    color:white;
+}
+#ContentPlaceHolder1_swap span:hover{
+    background-color:#F96F39;
+    color:white;
+}
+
+.BarBtnRight{
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+    border-top:none;
+    border-right:none;
+    border-bottom:none;
+    border-left: 1px solid #2B616D;
+}
+
+.BarBtnMiddle{
+    border-radius:0px;
+    border:none;
+    border-left: 1px solid #2B616D;
+}
+
+.BarBtn{
+    background-color: #FA8D62;
+}
+
+.BarBtn:hover{
+    background-color:#F96F39;
+    border-left: 1px solid #2B616D;
+}
+
+.btn-group .btn+.btn, .btn-group .btn+.btn-group, .btn-group .btn-group+.btn, .btn-group .btn-group+.btn-group, .btn-group-vertical .btn+.btn, .btn-group-vertical .btn+.btn-group, .btn-group-vertical .btn-group+.btn, .btn-group-vertical .btn-group+.btn-group{
+    margin-left:unset;
+}
+
+#ContentPlaceHolder1_Calculer{
+    background-color: #FA8D62;
+    color:white;
+    border-radius:25px;
+    font-size:12px;
+}
+
+#ContentPlaceHolder1_Calculer:hover {
+    background-color:#F96F39;
+}
+
+#qrcode {
+    margin:auto;
+    margin-bottom:20px;
+    margin-top:20px;
+    border: 10px solid white;
+}
+
+h2{
+    margin:auto;
+    margin-bottom:20px;
+}
+
+#input,#picture{
+    margin:auto;
+}
+
+#ContentPlaceHolder1_Alert{
+    width:100%;
+}
+
+#ContentPlaceHolder1_PasswordAlert{
+    text-align:center;
+    margin:auto;
+}
+
+#PwdBox{
+    font-size:30px;
+    border:2px solid black;
+    padding-top:0px;
+    padding-bottom:2px;
+    padding-right:20px;
+    padding-left:20px;
+    background-color:#F6F3A5;
+    color:black;
+    margin:auto;
+    min-width:500px;
+    text-align:center;
+}
+
+#Icon{
+    color:black;
+}
+
+@media (max-width: 767px) {
+    .AR{
+        text-align:center;
+        font-size:20px;
+    }
+    .AL{
+        text-align:center;
+    }
+    .btn{
+        padding:10px;
+        font-size:15px;
+        width:80px;
+    }
+    .ButtonsCenter{
+        text-align:center;
+        margin:auto;
+    }
+}

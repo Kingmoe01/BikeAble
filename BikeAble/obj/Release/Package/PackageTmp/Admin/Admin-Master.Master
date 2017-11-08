@@ -1,0 +1,77 @@
+﻿11211<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin-Master.Master.cs" Inherits="BikeAble.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css"/>
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css"/>    
+    <link rel="stylesheet" href="../Style/Sidebar.css"/>   
+    <link rel="stylesheet" href="../Style/Admin.css"/>   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <div class="OrangeBand"></div>
+                        <a id="Brand" href="#">Bike Able</a>
+                    </li>
+                    <li id="InfoUser">
+                        <div class="row">
+                            <div class="col-4"><i class="fa fa-user-circle" aria-hidden="true" onclick="deconnexion_Click" runat="server"></i></div>
+                            <div class="col-8">
+                                <br />
+                                <div class="row"><span>Admin</span> <span id="align"><asp:LinkButton Onclick="deconnexion_OnClick" id="deconnexion" runat="server"><span class="fa fa-sign-out pull-left" aria-hidden="true"></span></asp:LinkButton></span></div>
+                                <div class="row"><span><img src="../img/GreenDot.png" alt="Smiley face" height="10" width="10" />&nbsp;Connecté</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="InfoUser">
+                        
+                    </li>
+                    <li class="InfoUser">
+                        
+                    </li>
+                    <li>
+                        <a href="Dashboard.aspx"><i class="fa fa-area-chart" aria-hidden="true"></i>&nbsp; Tableau de bord</a>
+                    </li>
+                    <li>
+                        <a href="ListeCoursier.aspx"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp; Liste des coursiers</a>
+                    </li>
+                    <li>
+                        <a href="ListeClients.aspx"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp; Liste des clients</a>
+                    </li>
+                    <li>
+                        <a href="AdminSettings.aspx"><i class="fa fa-cog" aria-hidden="true"></i>&nbsp; Paramètres</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->            
+            <div class="OrangeBand"><a id="menu-toggle" href="#menu-toggle"><i id="MenuToggle" class="fa fa-bars" aria-hidden="true"></i></a></div>
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="container-fluid">                    
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+    </form>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="../scripts/Sidebar.js"></script>
+</body>
+</html>
