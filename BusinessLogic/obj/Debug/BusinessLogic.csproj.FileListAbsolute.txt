@@ -1,6 +1,0 @@
-C:\Users\Utilisateur\Desktop\BikeAble\Projet_developpement\BikeAble\BusinessLogic\bin\Debug\BusinessLogic.dll
-C:\Users\Utilisateur\Desktop\BikeAble\Projet_developpement\BikeAble\BusinessLogic\bin\Debug\BusinessLogic.pdb
-C:\Users\Utilisateur\Desktop\BikeAble\Projet_developpement\BikeAble\BusinessLogic\bin\Debug\MySql.Data.dll
-C:\Users\Utilisateur\Desktop\BikeAble\Projet_developpement\BikeAble\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
-C:\Users\Utilisateur\Desktop\BikeAble\Projet_developpement\BikeAble\BusinessLogic\obj\Debug\BusinessLogic.dll
-C:\Users\Utilisateur\Desktop\BikeAble\Projet_developpement\BikeAble\BusinessLogic\obj\Debug\BusinessLogic.pdb
